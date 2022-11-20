@@ -22,9 +22,7 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@/components/*": [
-        "components/*"
-      ]
+      "@/*": ["src/*"]
     },
     "incremental": true
   },
