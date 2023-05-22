@@ -1,7 +1,9 @@
 module.exports = {
   reactStrictMode: true,
+  images: {
+    domains: ['images.unsplash.com'],
+  },
   experimental: {
-    newNextLinkBehavior: true,
-    scrollRestoration: true,
+    appDir: true,
   },
 }

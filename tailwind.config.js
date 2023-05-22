@@ -1,8 +1,8 @@
-const colors = require("tailwindcss/colors");
+const { fontFamily } = require("tailwindcss/defaultTheme")
 
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}',
+    './app/**/*.{js,ts,jsx,tsx}',
   ],
   darkMode: 'class',
   theme: {
@@ -21,9 +21,15 @@ module.exports = {
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
     },
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+        mono: ["var(--font-mono)", ...fontFamily.sans],
+        heading: ["var(--font-heading)", ...fontFamily.sans],
+      },
+    },
   },
   variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),
