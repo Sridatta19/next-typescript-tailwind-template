@@ -19,7 +19,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="flex justify-center items-center gap-2"
           >
-            <span className="font-heading">By</span>
+            <span className="font-heading text-2xl">By</span>
             <Image
               src={vercelImage}
               alt="Vercel Logo"

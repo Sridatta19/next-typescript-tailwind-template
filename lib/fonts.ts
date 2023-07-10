@@ -1,8 +1,8 @@
 import {
   Public_Sans as FontSans,
   Fira_Code as FontMono,
+  Monoton as FontHeading,
 } from "next/font/google";
-import localFont from "next/font/local";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -16,13 +16,8 @@ export const fontMono = FontMono({
   weight: ["400"],
 });
 
-export const fontHeading = localFont({
+export const fontHeading = FontHeading({
+  subsets: ["latin"],
   variable: "--font-heading",
-  display: "swap",
-  src: [
-    {
-      path: "../assets/fonts/MabryPro-Bold.woff2",
-      style: "normal",
-    },
-  ],
+  weight: ["400"],
 });

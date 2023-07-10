@@ -3,8 +3,7 @@ import "@/styles/globals.css";
 import { fontMono, fontSans, fontHeading } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Next Tailwind Starter",
-  description: "A starter template for Next.js and Tailwind CSS",
+  title: "Nextjs Tailwind Starter",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
